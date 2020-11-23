@@ -1,0 +1,82 @@
+.participants {
+    
+    
+    background:/*1920  1707*/
+        url("../assets/images/svg/table/square.svg") 9% 508px no-repeat,
+        url("../assets/images/svg/table/line-pnk.svg") 11% 826px no-repeat, 
+        url("../assets/images/svg/table/triangle.svg") 400px 877px no-repeat,
+        url("../assets/images/svg/table/line-blue.svg") 83% 204px no-repeat,
+        url("../assets/images/svg/table/square.svg") 1719px 1051px no-repeat;        
+        
+    
+        background-size:
+        auto auto,
+        auto auto,
+        auto auto,
+        auto auto,
+        auto auto;
+    background-color: $grey;
+    &__inner {        
+        padding: 123px  0 120px 272px; 
+        
+        @media #{$notebook} {
+            padding: 123px  0 120px 150px;
+        }
+
+        @media #{$mobile} {
+            padding: 80px  0 80px 0;
+        }
+    }
+
+    &__text {        
+        color: $black;
+        font-size: 2.4rem;
+        line-height: 1.66;
+        max-width: 640px;
+        margin-bottom: 106px;
+        position: relative;
+        z-index: 1000;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 308px;
+            height: 8px;
+            background-color: #C893EE;
+            right: -116px;
+            top: 46px;
+            transform: rotate(-45deg);
+            z-index: -1;
+
+            @media #{$mobile-sm} {
+            width: 220px;
+            height: 6px;
+            right: -28px;
+        }
+
+        }
+
+        @media #{$mobile} {
+             margin-bottom: 36px;
+             max-width: 100%;
+        }
+
+        @media #{$mobile-sm} {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media #{$mobile-sm} {
+        background-size:
+            24px 24px,            
+            24px 24px,
+            32px 32px,
+            24px 24px,
+            24px 24px;
+            
+
+        
+            
+    }
+
+}

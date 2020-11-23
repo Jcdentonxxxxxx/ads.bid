@@ -1,0 +1,43 @@
+.nav {
+    font-size: 1.8rem;
+    margin-left: 7.6rem;
+    
+
+    &__link {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 2rem;
+        color: $white;
+        text-decoration: none;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    &__text {
+        &--desk {
+            display: inline-block;
+
+            @media #{$mobile} {
+                display: none;
+            }
+        }
+
+        &--mob {
+            display: none;
+
+            @media #{$mobile} {
+                display: inline-block;
+            }
+
+        }
+    }
+
+    @media #{$mobile-sm} {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1rem;
+        font-size: 1.4rem;        
+    }
+}

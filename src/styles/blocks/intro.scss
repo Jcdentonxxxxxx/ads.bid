@@ -1,0 +1,80 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    max-height: 523px;
+    background:
+        url("../assets/images/svg/header/square-blue.svg") 82% 276px no-repeat,
+        url("../assets/images/svg/header/line.svg") 88% 30px no-repeat, 
+        url("../assets/images/svg/header/triangle-red.svg") 67% 49px no-repeat,
+        url("../assets/images/svg/header/line.svg") 21% 276px no-repeat,
+        url("../assets/images/svg/header/square-pink.svg") 13% 100px no-repeat,
+        url("../assets/images/splash.jpg") center no-repeat;
+
+    background-size:
+        auto auto,
+        auto auto,
+        auto auto,
+        auto auto,
+        40px 40px,
+        cover;
+
+
+    position: relative;
+    padding-top: 115px;
+
+    &__inner {
+        width: 100%;
+        max-width: 880px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: 'BalsamiqSans-Regular', sans-serif;
+        font-size: 9.6rem;
+        color: $white;
+
+        @media #{$tablet} {
+            font-size: 7.6rem;
+            line-height: 1.2;
+        }
+
+        @media #{$mobile} {
+            font-size: 5.6rem;
+
+        }
+
+        @media #{$mobile-sm} {
+            font-size: 3.2rem;
+
+        }
+    }
+
+    @media #{$tablet} {
+        max-height: 455px;
+    }
+
+    @media #{$mobile-sm} {
+        max-height: 310px;
+
+        background-size:
+        24px 24px,
+        24px 24px,
+        32px 32px,
+        24px 24px,
+        24px 24px,
+        cover;
+
+        background-position:
+        96% 187px,
+        95% 98px,
+        67% 49px,
+        21% 276px,
+        1% 100px,
+        center
+        
+    }
+}

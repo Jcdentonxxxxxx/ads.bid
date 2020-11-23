@@ -1,0 +1,45 @@
+@import "~slick-carousel/slick/slick";
+@import "vars.scss";
+@import "vendors/reset.scss";
+@import "fonts.scss";
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Montserrat-Medium', sans-serif;
+    background-color: $white;    
+    font-size: 2.4rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/*Vendor*/
+
+
+/*Blocks*/
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/catalogs.scss";
+@import "blocks/prize.scss";
+@import "blocks/main.scss";
+@import "blocks/container.scss";
+@import "blocks/btn.scss";
+@import "blocks/rules.scss";
+@import "blocks/square.scss";
+@import "blocks/chance.scss";
+@import "blocks/participants.scss";
+@import "blocks/table.scss";
+@import "blocks/footer.scss";
+
+
+@import "helpers.scss";

@@ -1,0 +1,37 @@
+.header {
+    width: 100%;
+    padding-top: 3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: $zIndex;
+    background-color: transparent;
+
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        @media #{$mobile} {
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+
+        @media #{$mobile-sm} {
+            width: 75px;
+            height: 25px;
+
+            img {
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+
+
+
+    }
+}

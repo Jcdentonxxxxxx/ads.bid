@@ -1,0 +1,112 @@
+.footer {
+    background-color: $grey;
+    padding-bottom: 16px;
+
+    &__logo {
+        width: 136px;
+        height: 44.6px;
+        margin-bottom: 16px;
+
+        @media #{$mobile-sm} {
+            width: 75px;
+            height: 24.4px;
+            margin-right: 9px;
+            margin-bottom: 23px;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Montserrat-Regular', sans-serif;
+        color: $grey_footer;
+        position: relative;
+
+        @media #{$mobile-sm} {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-bottom: 96px;
+        }
+    }
+
+    &__col {
+        &--left {
+            font-size: 1.6rem;
+            max-width: 60%;
+
+            @media #{$mobile-sm} {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                font-size: 1rem;
+                max-width: 100%;
+            }
+        }
+
+        &--right {
+            font-size: 1.8rem;
+
+            @media #{$mobile-sm} {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    &__links {
+        @media #{$mobile-sm} {
+            position: absolute;
+            left: 0;
+            bottom: 10px;
+
+            .footer__link {
+                font-size: 1.4rem;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    &__link {
+        color: $grey_footer;
+        text-decoration: none;
+    }
+
+    &__support {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        span {
+            margin-bottom: 25px;
+
+            @media #{$mobile-sm} {
+               margin-bottom: 12px; 
+            }
+        }
+
+        a:first-child {
+            margin-bottom: 5px;
+        }
+
+    }
+
+    &__img {
+        margin-right: 10px;
+
+        @media #{$mobile-sm} {
+               width: 12px;
+               height: 10px;
+            }
+    }
+
+    a:hover {
+        color: $black;
+    }
+}

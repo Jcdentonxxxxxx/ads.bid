@@ -1,0 +1,34 @@
+.square {
+        width: 443.36px;
+        height: 443.36px;
+        background: url("../assets/images/splash-mini.jpg") center no-repeat;
+        position: absolute;
+        right: 90px;
+        top: 394px;
+        transform: rotate(-45deg);
+        border-radius: 8px;
+        padding: 56px;
+
+        &__inner {
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+        }
+
+        @media #{$scale} {
+            width: 300px;
+            height: 300px;
+            padding: 36px;
+        }
+
+        @media #{$desktop} {
+            width: 150px;
+            height: 150px;
+            padding: 20px;
+        }
+
+        @media #{$notebook} {
+            display: none;
+        }
+    }

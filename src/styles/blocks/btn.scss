@@ -1,0 +1,68 @@
+.btn {
+    display: inline-block;
+    vertical-align: top;    
+    border: none;
+    cursor: pointer;    
+    font-family: inherit;
+    text-decoration: none;
+    
+
+   &--small {
+       font-size: 1.6rem;
+       line-height: 1.2;
+       position: absolute;
+       top: 8px;
+       left: 8px;
+       border-radius: 1.2rem;
+       background: linear-gradient(90deg, $blueButton, $purpleButton);
+       color: $white;
+       padding: 1rem;
+    
+       &:hover {
+           background: linear-gradient(180deg, $blueButton, $purpleButton);
+           box-shadow: 0 0 10px -3px $purpleButton;
+       }
+
+       @media #{$notebook} {
+            font-size: 1.3rem;
+        }
+
+        @media #{$mobile-sm} {
+            font-size: 1.2rem;
+            padding: 0.45rem 0.8rem;
+            border-radius: 0.6rem;
+        }
+   }
+
+   &--big {
+    font-size: 1.8rem;
+    font-family: 'Montserrat-Medium',sans-serif;
+    color: $white;
+    line-height: 1.2;
+    background: linear-gradient(90deg, $blueButton 0%, $purpleButton 100%);
+    padding: 21px 40px;
+    border-radius: 1.2rem;
+    box-shadow: 0px 10px 25px rgba(112, 123, 239, 0.55),
+        inset 0px 1px 5px #FFFFFF,
+        inset 0px -2px 10px rgba(18, 40, 77, 0.37);
+
+        &:hover {
+            background: linear-gradient(180deg, $blueButton 0%, $purpleButton 100%);
+        }
+
+        &:active {
+            box-shadow: 
+            inset 0px 1px 5px #FFFFFF,
+            inset 0px -2px 10px rgba(18, 40, 77, 0.37);
+            transform: translateY(1px);
+        }
+
+    @media #{$mobile-sm} {
+            font-size: 1.6rem;
+            padding: 14px 70.5px;
+            border-radius: 0.8rem;
+            width: 100%;
+            text-align: center;
+        }
+   }
+}

@@ -1,0 +1,110 @@
+.table {
+    color: #596982;
+    width: 100%;
+    border-collapse: separate;
+    margin-bottom: 48px;
+
+    th,
+    td {
+        text-align: left;
+        font-size: 1.8rem;
+
+        @media #{$mobile-sm} {
+            font-size: 1.4rem;
+        }
+    }
+
+    th:first-child,
+    td:first-child {
+        width: 17.5%;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+        width: 62%;
+    }
+
+    thead {
+
+        th,
+        td {
+            font-family: 'Montserrat-SemiBold', sans-serif;
+            padding: 0 0 24px 40px;
+
+            @media #{$mobile-sm} {
+                padding: 0 0 16px 16px;
+                vertical-align: bottom;
+            }
+        }
+
+    }
+
+
+    tbody {
+        box-shadow: 0px 8px 32px rgba(18, 40, 77, 0.08);
+        background-color: $white;
+        border-radius: 12px;
+
+        @media #{$mobile-sm} {
+            border-radius: 8px;
+        }
+
+        th,
+        td {
+            padding: 16px 0 16px 40px;
+            border-bottom: 1px solid #DBDFE4;
+
+            @media #{$mobile-sm} {
+                padding: 12px 0 12px 16px;
+            }
+        }
+
+        tr {
+            border-bottom: 1px solid #DBDFE4;
+
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:first-child td:first-child {
+            border-radius: 12px 0 0 0;
+
+            @media #{$mobile-sm} {
+                border-radius: 8px 0 0 0;
+            }
+        }
+
+        tr:first-child td:last-child {
+            border-radius: 0 12px 0 0;
+
+            @media #{$mobile-sm} {
+                border-radius: 0 8px 0 0;
+            }
+        }
+
+        tr:last-child td:first-child {
+            border-radius: 0 0 0 12px;
+
+            @media #{$mobile-sm} {
+                border-radius: 0 0 0 8px;
+            }
+        }
+
+        tr:last-child td:last-child {
+            border-radius: 0 0 12px 0;
+
+            @media #{$mobile-sm} {
+                border-radius: 0 0 8px 0;
+            }
+        }
+
+
+    }
+
+
+    @media #{$mobile-sm} {
+            margin-bottom: 40px;
+        }
+}
