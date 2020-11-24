@@ -8,13 +8,13 @@
     position: relative;
     padding: 72px 20px 8px;
     text-align: center;
-    position: relative;    
+    position: relative;
 
     &__title {
-        
+
         font-size: 2.4rem;
         color: $black;
-        line-height: 1.2;
+        line-height: 1.21;
         margin-bottom: 29px;
         padding: 0 15px;
 
@@ -29,18 +29,34 @@
 
         @media #{$mobile-sm} {
             font-size: 1.6rem;
-            padding: 0 14px;
+            padding: 0 13px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
         }
     }
 
     &__img {
         position: absolute;
         left: 50%;
-        bottom: 5%;
+        bottom: 15%;
         transform: translateX(-50%);
-        
+
         max-width: 100%;
         height: auto;
+
+        &--bottom {
+            bottom: 11%;
+
+            @media #{$scale} {
+                bottom: 9%;
+            }
+        }
+        @media #{$scale} {
+               bottom: 9%;
+        }
 
         @media #{$desktop} {
             max-width: 90%;
@@ -52,23 +68,23 @@
         }
 
         @media #{$mobile-sm} {
-            max-width: 75%;   
+            max-width: 94%;
         }
-        
+
     }
 
 
     @media #{$notebook} {
-       padding: 67px 10px 8px;
+        padding: 67px 10px 8px;
     }
 
     @media #{$tablet} {
-       width: 225px;
+        width: 225px;
     }
 
     @media #{$mobile-sm} {
-       width: 160px;
-       padding: 58px 10px 8px;
+        width: 160px;
+        padding: 44px 10px 8px;
     }
 
 }

@@ -2,10 +2,10 @@
     
     
     background:/*1920  1707*/
-        url("../assets/images/svg/table/square.svg") 9% 508px no-repeat,
+        url("../assets/images/svg/table/square.svg") 9.5% 508px no-repeat,
         url("../assets/images/svg/table/line-pnk.svg") 11% 826px no-repeat, 
         url("../assets/images/svg/table/triangle.svg") 400px 877px no-repeat,
-        url("../assets/images/svg/table/line-blue.svg") 83% 204px no-repeat,
+        url("../assets/images/svg/table/line-blue.svg") 85% 204px no-repeat,
         url("../assets/images/svg/table/square.svg") 1719px 1051px no-repeat;        
         
     
@@ -17,7 +17,7 @@
         auto auto;
     background-color: $grey;
     &__inner {        
-        padding: 123px  0 120px 272px; 
+        padding: 124px  0 118px 272px; 
         
         @media #{$notebook} {
             padding: 123px  0 120px 150px;
@@ -43,15 +43,16 @@
             width: 308px;
             height: 8px;
             background-color: #C893EE;
-            right: -116px;
-            top: 46px;
+            right: -100px;
+            top: 60px;
             transform: rotate(-45deg);
             z-index: -1;
 
             @media #{$mobile-sm} {
             width: 220px;
             height: 6px;
-            right: -28px;
+            right: -27px;
+            top: 46px;
         }
 
         }
@@ -63,6 +64,8 @@
 
         @media #{$mobile-sm} {
             font-size: 1.4rem;
+            line-height: 1.72;
+            margin-bottom: 36px;
         }
     }
 
