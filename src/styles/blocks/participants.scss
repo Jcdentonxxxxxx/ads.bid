@@ -70,16 +70,21 @@
     }
 
     @media #{$mobile-sm} {
-        background-size:
-            24px 24px,            
-            24px 24px,
-            32px 32px,
-            24px 24px,
-            24px 24px;
-            
+        background:/*1920  1707*/
+        url("../assets/images/svg/table/square360.svg") 2% 189px no-repeat,
+        url("../assets/images/svg/table/triangle360.svg") 103% 307px no-repeat, 
+        url("../assets/images/svg/table/triangle360.svg") 68% 1061px no-repeat;
+        
+
 
         
+        background-size:
+            32px 32px,            
+            36px 36px,
+            36px 36px;
             
+
+        background-color: $grey;
     }
 
 }

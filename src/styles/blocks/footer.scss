@@ -65,7 +65,7 @@
         @media #{$mobile-sm} {
             position: absolute;
             left: 0;
-            bottom: 10px;
+            bottom: 30px;
 
             .footer__link {
                 font-size: 1.4rem;
@@ -78,6 +78,10 @@
         color: $grey_footer;
         text-decoration: none;
         margin-bottom: 18px;
+
+        @media #{$mobile-sm} {
+               margin-bottom: 3px; 
+            }
     }
 
     &__support {
@@ -89,7 +93,7 @@
             margin-bottom: 21px;
 
             @media #{$mobile-sm} {
-               margin-bottom: 12px; 
+               margin-bottom: 9px; 
             }
         }
 
@@ -113,6 +117,10 @@
 
         time {
             margin-left: 10px;
+
+             @media #{$mobile-sm} {
+               margin-left: 1px;
+            }
         }
     }
 
