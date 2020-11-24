@@ -66,13 +66,21 @@
 
     @media #{$mobile-sm} {
         background-size:
-            24px 24px,            
-            24px 24px,
             32px 32px,
-            24px 24px,
+            20px 20px,
+            36px 36px,
+            20px 20px,
             auto auto;
 
-        
+        background-position:
+            100% 301px,
+            91% 420px,
+            79% 462px,
+            93% 48px;
+           
             
+
+
+
     }
 }

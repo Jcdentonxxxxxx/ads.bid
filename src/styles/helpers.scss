@@ -4,3 +4,11 @@
         
     }
 }
+
+.newline {
+    display: inline;
+
+    @media #{$mobile-sm} {
+               display: table;
+            }
+}
