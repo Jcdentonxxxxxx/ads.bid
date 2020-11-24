@@ -1,10 +1,10 @@
 .chance {
     background:
         /*1920  769*/
-        url("../assets/images/svg/chance/square.svg") 58% 54% no-repeat,
-        url("../assets/images/svg/chance/line.svg") 67% 86% no-repeat,
-        url("../assets/images/svg/chance/triangle.svg") 71% 66% no-repeat,
-        url("../assets/images/svg/chance/line-pink.svg") 88% 32% no-repeat,
+        url("../assets/images/svg/chance/square.svg") 60.5% 59% no-repeat,
+        url("../assets/images/svg/chance/line.svg") 68.5% 90% no-repeat,
+        url("../assets/images/svg/chance/triangle.svg") 73.5% 72% no-repeat,
+        url("../assets/images/svg/chance/line-pink.svg") 89.2% 33.3% no-repeat,
         linear-gradient(94.12deg, $blue 0%, $purple 100%);
 
     background-size:
@@ -26,14 +26,14 @@
         }
 
         @media #{$mobile-sm} {
-            padding-top: 45px;
+            padding-top: 49px;
         }
     }
 
     &__text {
         font-family: 'Montserrat-Medium', sans-serif;
         font-size: 5.6rem;
-        line-height: 1.28;
+        line-height: 1.29;
         margin-bottom: 60px;
         max-width: 1184px;
 
@@ -47,7 +47,7 @@
 
         @media #{$mobile-sm} {
             font-size: 2.8rem;
-            line-height: 1.35;
+            line-height: 1.36;
             margin-bottom: 32px;
         }
     }
@@ -55,7 +55,7 @@
     &__img {
         width: 486px;
         height: 336px;
-        margin-bottom: 80px;
+        margin-bottom: 76px;
 
         @media #{$mobile-sm} {
             width: 244px;

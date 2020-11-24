@@ -39,7 +39,7 @@
         }
 
         @media #{$mobile-sm} {
-            height: 236px;
+            height: 244px;
             padding: 4px;
         }
     }
@@ -57,6 +57,10 @@
         border-radius: 8px;
         
         padding: 3px 3px 4px;
+
+        @media #{$mobile-sm} {
+            top: 98%;
+        }
 
         img {
             display: block;
@@ -82,4 +86,8 @@
             display: block;
         }
     }
+
+    @media #{$mobile-sm} {
+            transform: translateY(48%);
+        }
 }

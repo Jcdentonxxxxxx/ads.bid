@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    padding-top: 3rem;
+    padding-top: 2.4rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -16,6 +16,10 @@
         @media #{$mobile} {
             justify-content: space-between;
         }
+
+        @media #{$mobile-sm} {
+            justify-content: flex-end;
+        }
     }
 
     &__logo {
@@ -23,6 +27,9 @@
         @media #{$mobile-sm} {
             width: 75px;
             height: 25px;
+            position: absolute;
+            left: 17px;
+            top: 16px;
 
             img {
                 display: block;

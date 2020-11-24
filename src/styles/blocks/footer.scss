@@ -53,6 +53,7 @@
 
         &--right {
             font-size: 1.8rem;
+            margin-right: 44px;
 
             @media #{$mobile-sm} {
                 font-size: 1.4rem;
@@ -76,6 +77,7 @@
     &__link {
         color: $grey_footer;
         text-decoration: none;
+        margin-bottom: 18px;
     }
 
     &__support {
@@ -84,7 +86,7 @@
         align-items: flex-start;
 
         span {
-            margin-bottom: 25px;
+            margin-bottom: 21px;
 
             @media #{$mobile-sm} {
                margin-bottom: 12px; 
@@ -104,6 +106,14 @@
                width: 12px;
                height: 10px;
             }
+    }
+
+    &__title {
+        margin-bottom: 13px;
+
+        time {
+            margin-left: 10px;
+        }
     }
 
     a:hover {
